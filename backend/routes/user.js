@@ -67,7 +67,7 @@ router.post("/sign-in", async (req, res) => {
           { name: existingUser.username },
           { role: existingUser.role },
         ];
-        const token = jwt.sign({ authClaims }, "bookStore123", {
+        const token = jwt.sign({ authClaims }, "bookHeaven123", {
           expiresIn: "30d",
         });
         res.status(200).json({
